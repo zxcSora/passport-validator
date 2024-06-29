@@ -198,7 +198,7 @@ func IsPassportBirthdayValid(birthday time.Time, checkDate time.Time) error {
 	return nil
 }
 
-// PassportPlaceOfBirthNormalize двойные пробелы и дефисы заменяются на одинарные; пробелы слева и справа от дефиса удаляются "US-  -SR"->"USSR". SHOCK-11301
+// PassportPlaceOfBirthNormalize двойные пробелы и дефисы заменяются на одинарные; пробелы слева и справа от дефиса удаляются "US-  -SR"->"USSR".
 func PassportPlaceOfBirthNormalize(placeOfBirth string) string {
 	if placeOfBirth == "" {
 		return ""
